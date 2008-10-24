@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Simple Tasks with SDS</title>
+  <%= javascript_include_tag :defaults%>
+  <%= stylesheet_link_tag 'main' %>
+</head>
+<body>
+<h2>Sql Server Data Services Simple Task Application</h2>
+<div class="main">
+		<div class="main-container">
+  		<div class="main-body">
+  				<div class="flash">
+  				<p><%= flash[:notice] %></p>
+  				</div>
+  		  		<%= yield  %>
+  		</div>
+  	</div>
+  	<div class="footer-container">
+  		<div class="footer">Built with SQL Server Data Services and ssds-rest</div>
+  	</div>
+  </div>
+</div>
+
+</body>
+</html>
