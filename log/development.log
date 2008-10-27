@@ -16316,3 +16316,186 @@ c2h7AAY6CkB1c2VkewA=--1fdf39903ca6d33314b812a347b9db8f0adf6fa1
 Rendering template within layouts/default
 Rendering tasks/index
 Completed in 0.32670 (3 reqs/sec) | Rendering: 0.01610 (4%) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2008-10-27 14:48:48) [GET]
+  Session ID: e0183cc491bb7db31ba60de12eaac6bc
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `initialize'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `open'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    /usr/local/lib/ruby/1.8/timeout.rb:93:in `timeout'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/net/http.rb:553:in `do_start'
+    /usr/local/lib/ruby/1.8/net/http.rb:542:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/sds-rest-0.1.1/lib/sds-rest.rb:171:in `execute_request'
+    /usr/local/lib/ruby/gems/1.8/gems/sds-rest-0.1.1/lib/sds-rest.rb:209:in `get'
+    /usr/local/lib/ruby/gems/1.8/gems/sds-rest-0.1.1/lib/sds-rest.rb:122:in `query'
+    /usr/local/lib/ruby/gems/1.8/gems/sds-rest-0.1.1/lib/sds-activeresource.rb:83:in `get'
+    /Users/javery/.gem/ruby/1.8/gems/activeresource-2.1.2/lib/active_resource/base.rb:563:in `find_every'
+    /Users/javery/.gem/ruby/1.8/gems/activeresource-2.1.2/lib/active_resource/base.rb:507:in `find'
+    /app/controllers/tasks_controller.rb:8:in `index'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1166:in `send'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:579:in `call_filters'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/rescue.rb:201:in `perform_action'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `send'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/session_management.rb:130:in `process'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:389:in `process'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Users/javery/.gem/ruby/1.8/gems/rails-2.1.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:510:in `require'
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:510:in `require'
+    /Users/javery/.gem/ruby/1.8/gems/rails-2.1.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2008-10-27 14:48:51) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--0780ba4607dd34f584066822fbbbbc85eaa26789
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `initialize'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `open'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    /usr/local/lib/ruby/1.8/timeout.rb:93:in `timeout'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/net/http.rb:553:in `do_start'
+    /usr/local/lib/ruby/1.8/net/http.rb:542:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/sds-rest-0.1.1/lib/sds-rest.rb:171:in `execute_request'
+    /usr/local/lib/ruby/gems/1.8/gems/sds-rest-0.1.1/lib/sds-rest.rb:209:in `get'
+    /usr/local/lib/ruby/gems/1.8/gems/sds-rest-0.1.1/lib/sds-rest.rb:122:in `query'
+    /usr/local/lib/ruby/gems/1.8/gems/sds-rest-0.1.1/lib/sds-activeresource.rb:83:in `get'
+    /Users/javery/.gem/ruby/1.8/gems/activeresource-2.1.2/lib/active_resource/base.rb:563:in `find_every'
+    /Users/javery/.gem/ruby/1.8/gems/activeresource-2.1.2/lib/active_resource/base.rb:507:in `find'
+    /app/controllers/tasks_controller.rb:8:in `index'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1166:in `send'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:579:in `call_filters'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/rescue.rb:201:in `perform_action'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `send'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/session_management.rb:130:in `process'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:389:in `process'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:503:in `load'
+    /Users/javery/.gem/ruby/1.8/gems/rails-2.1.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:510:in `require'
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Users/javery/.gem/ruby/1.8/gems/activesupport-2.1.2/lib/active_support/dependencies.rb:510:in `require'
+    /Users/javery/.gem/ruby/1.8/gems/rails-2.1.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Users/javery/.gem/ruby/1.8/gems/actionpack-2.1.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2008-10-27 15:00:46) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--0780ba4607dd34f584066822fbbbbc85eaa26789
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+Rendering template within layouts/default
+Rendering tasks/index
+Completed in 0.83888 (1 reqs/sec) | Rendering: 0.02007 (2%) | 200 OK [http://localhost/]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2008-10-27 15:00:52) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZmZkYzIwNmMzNzYxODI5ZjcyY2QzN2NhZWIxMGVm
+N2EiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--d2e8b5e26e1b0527ace0068d5821d398d4830078
+  Parameters: {"authenticity_token"=>"d5a130fb0392073bcfa994459bc19ae1859f824b", "action"=>"create", "task"=>{"name"=>"Sample Task"}, "controller"=>"tasks"}
+Redirected to http://localhost:3000/tasks
+Completed in 1.04829 (0 reqs/sec) | 302 Found [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2008-10-27 15:00:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZmZkYzIwNmMzNzYxODI5ZjcyY2QzN2NhZWIxMGVm
+N2EiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--d2e8b5e26e1b0527ace0068d5821d398d4830078
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+Rendering template within layouts/default
+Rendering tasks/index
+Completed in 0.73592 (1 reqs/sec) | Rendering: 0.00829 (1%) | 200 OK [http://localhost/tasks]

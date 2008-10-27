@@ -12,6 +12,27 @@ sds-tasks is a simple rails application built using the sds-rest library and the
 6. Download the sds-tasks application and unzip it to a folder on your hard drive.
 7. Signup for a SDS account at http://www.microsoft.com/azure/default.mspx and then enter your credentials in the ssds.yml file.
 8. Modify the task.rb file to point to the authority and container that you want to use to store the task. If you don't have one you can create them using the sds-rest library.
+ -- To create an authority and container using the sds-rest library follow these instructions:
+ a) open the command prompt and type irb and type the following, you should see similar responses:
+
+	irb(main):002:0> require 'rubygems'
+	=> true
+	irb(main):003:0> RAILS_ROOT = ""
+	=> ""
+	irb(main):004:0> require 'sds-rest'
+	=> true
+	irb(main):005:0> service = SDSRest::Service.new(:username => 'username', :password => 'password', :url =>  'data.database.windows.net')
+	=> #<SDSRest::Service:0x1295670 @password="password", @username="username", @authority=nil, @url="data.database.windows.net">
+	irb(main):011:0> service.authority = nil
+	=> nil
+	irb(main):013:0> service.create_authority 'taskdemo'
+	=> #<Net::HTTPCreated 201 Created readbody=true>
+	irb(main):014:0> service.authority = 'taskdemo'
+	=> "taskdemo"
+	irb(main):015:0> service.create_container 'tasks'
+	=> #<Net::HTTPCreated 201 Created readbody=true>
+	irb(main):016:0> exit
+
 9. Open a command prompt and navigate to that directory and type "ruby script/server"
 10. Go to http://localhost:3000/ and you will see the task application up and running.
 
