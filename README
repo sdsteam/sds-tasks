@@ -1,38 +1,21 @@
-== Welcome to Rails
+== Welcome to SDS-TASKS
 
-Rails is a web-application framework that includes everything needed to create 
-database-backed web applications according to the Model-View-Control pattern. 
-
-This pattern splits the view (also called the presentation) into "dumb" templates
-that are primarily responsible for inserting pre-built data in between HTML tags.
-The model contains the "smart" domain objects (such as Account, Product, Person,
-Post) that holds all the business logic and knows how to persist themselves to
-a database. The controller handles the incoming requests (such as Save New Account,
-Update Product, Show Post) by manipulating the model and directing data to the view.
-
-In Rails, the model is handled by what's called an object-relational mapping
-layer entitled Active Record. This layer allows you to present the data from
-database rows as objects and embellish these data objects with business logic
-methods. You can read more about Active Record in
-link:files/vendor/rails/activerecord/README.html.
-
-The controller and view are handled by the Action Pack, which handles both
-layers by its two parts: Action View and Action Controller. These two layers
-are bundled in a single package due to their heavy interdependence. This is
-unlike the relationship between the Active Record and Action Pack that is much
-more separate. Each of these packages can be used independently outside of
-Rails.  You can read more about Action Pack in
-link:files/vendor/rails/actionpack/README.html.
-
+sds-tasks is a simple rails application built using the sds-rest library and the sds-activeresource adapter.
 
 == Getting Started
 
-1. At the command prompt, start a new Rails application using the <tt>rails</tt> command
-   and your application name. Ex: rails myapp
-2. Change directory into myapp and start the web server: <tt>script/server</tt> (run with --help for options)
-3. Go to http://localhost:3000/ and get "Welcome aboard: You're riding the Rails!"
-4. Follow the guidelines to start developing your application
+1. Install Ruby with the One-Click Installer - http://rubyforge.org/frs/download.php/29263/ruby186-26.exe
+2. Install Ruby Gems - http://rubyforge.org/frs/download.php/38647/rubygems-1.2.0.zip
+3. Install UUIDTools - cmd line => gem install uuidtools
+4. Install Hoe - cmd line => gem install hoe
+5. Install sds-rest - cmd line => gem install sds-rest
+6. Download the sds-tasks application and unzip it to a folder on your hard drive.
+7. Signup for a SDS account at http://www.microsoft.com/azure/default.mspx and then enter your credentials in the ssds.yml file.
+8. Modify the task.rb file to point to the authority and container that you want to use to store the task. If you don't have one you can create them using the sds-rest library.
+9. Open a command prompt and navigate to that directory and type "ruby script/server"
+10. Go to http://localhost:3000/ and you will see the task application up and running.
 
+==== Standard Rails README
 
 == Web Servers
 
