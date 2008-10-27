@@ -1,6 +1,6 @@
 development:
-    username: javery 
-    password: YAnrZWh8a3y7vw9VfF8q
+    username: username
+    password: password
 test:
-    username: javery 
-    password: YAnrZWh8a3y7vw9VfF8q
+    username: username 
+    password: password
